@@ -29,6 +29,8 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -56,45 +58,22 @@ BalloonEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	Underline,
+	Alignment
 ];
 
 // Editor configuration.
 BalloonEditor.defaultConfig = {
 	toolbar: {
 		items: [
-			'heading',
-			'|',
 			'bold',
 			'italic',
 			'link',
-			'bulletedList',
-			'numberedList',
-			'|',
-			'indent',
-			'outdent',
-			'|',
-			'imageUpload',
-			'blockQuote',
-			'insertTable',
-			'mediaEmbed',
-			'undo',
-			'redo'
-		]
-	},
-	image: {
-		toolbar: [
-			'imageStyle:full',
-			'imageStyle:side',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
+			'underline',
+			'alignment'
+			// 'bulletedList',
+			// 'numberedList'
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
