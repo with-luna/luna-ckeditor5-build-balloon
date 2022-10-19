@@ -19,6 +19,13 @@ import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Mention from '@ckeditor/ckeditor5-mention/src/mention';
 
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+
+import Font from '@ckeditor/ckeditor5-font/src/font';
+
 export default class BalloonEditor extends BalloonEditorBase {}
 
 // Plugins to include in the build.
@@ -40,7 +47,14 @@ BalloonEditor.builtinPlugins = [
 	TextTransformation,
 	Underline,
 	Mention,
-	Alignment
+	Alignment,
+
+	Strikethrough,
+	Code,
+	Subscript,
+	Superscript,
+
+	Font,
 ];
 
 // Editor configuration.
@@ -49,9 +63,15 @@ BalloonEditor.defaultConfig = {
 		items: [
 			'bold',
 			'italic',
-			'link',
 			'underline',
-			'alignment'
+			'alignment',
+			'|',
+			'fontColor', 
+			'|',
+			'bulletedList', 
+			'numberedList',
+			'|',
+			'link', 'strikethrough', 'code', 'subscript', 'superscript',
 		],
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
