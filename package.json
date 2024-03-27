@@ -1,6 +1,6 @@
 {
   "name": "luna-ckeditor5-build-balloon",
-  "version": "2.0.2",
+  "version": "3.0.2",
   "description": "The balloon editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
@@ -36,18 +36,18 @@
     "@ckeditor/ckeditor5-easy-image": "^35.1.0",
     "@ckeditor/ckeditor5-editor-balloon": "^35.1.0",
     "@ckeditor/ckeditor5-essentials": "^35.1.0",
-    "@ckeditor/ckeditor5-heading": "^35.1.0",
+    "@ckeditor/ckeditor5-font": "^35.1.0",
+    "@ckeditor/ckeditor5-heading": "^35.4.0",
     "@ckeditor/ckeditor5-image": "^35.1.0",
     "@ckeditor/ckeditor5-indent": "^35.1.0",
     "@ckeditor/ckeditor5-link": "^35.1.0",
     "@ckeditor/ckeditor5-list": "^35.1.0",
     "@ckeditor/ckeditor5-media-embed": "^35.1.0",
     "@ckeditor/ckeditor5-mention": "^35.1.0",
-    "@ckeditor/ckeditor5-paragraph": "^35.1.0",
+    "@ckeditor/ckeditor5-paragraph": "^35.4.0",
     "@ckeditor/ckeditor5-paste-from-office": "^35.1.0",
     "@ckeditor/ckeditor5-table": "^35.1.0",
-    "@ckeditor/ckeditor5-typing": "^35.1.0",
-    "@ckeditor/ckeditor5-font": "^35.1.0"
+    "@ckeditor/ckeditor5-typing": "^35.1.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^35.1.0",

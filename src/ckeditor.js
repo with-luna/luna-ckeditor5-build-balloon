@@ -23,6 +23,8 @@ import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
+import { HeadingButtonsUI } from '@ckeditor/ckeditor5-heading';
+import { ParagraphButtonUI } from '@ckeditor/ckeditor5-paragraph';
 
 import Font from '@ckeditor/ckeditor5-font/src/font';
 
@@ -53,6 +55,9 @@ BalloonEditor.builtinPlugins = [
 	Code,
 	Subscript,
 	Superscript,
+
+	HeadingButtonsUI,
+	ParagraphButtonUI,
 
 	Font,
 ];
