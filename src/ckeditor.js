@@ -18,6 +18,9 @@ import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices'
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Mention from '@ckeditor/ckeditor5-mention/src/mention';
+import Image from '@ckeditor/ckeditor5-image/src/image'
+import ImageUpload from '@ckeditor/ckeditor5-image/src/imageupload'
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize'
 
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
@@ -27,6 +30,7 @@ import { HeadingButtonsUI } from '@ckeditor/ckeditor5-heading';
 import { ParagraphButtonUI } from '@ckeditor/ckeditor5-paragraph';
 
 import Font from '@ckeditor/ckeditor5-font/src/font';
+import { SimpleUploadAdapter } from '@ckeditor/ckeditor5-upload';
 
 export default class BalloonEditor extends BalloonEditorBase {}
 
@@ -50,11 +54,14 @@ BalloonEditor.builtinPlugins = [
 	Underline,
 	Mention,
 	Alignment,
+	Image,
+	ImageUpload,
 
 	Strikethrough,
 	Code,
 	Subscript,
 	Superscript,
+	SimpleUploadAdapter,
 
 	HeadingButtonsUI,
 	ParagraphButtonUI,

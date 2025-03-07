@@ -1,6 +1,6 @@
 {
   "name": "luna-ckeditor5-balloon",
-  "version": "3.0.2",
+  "version": "4.0.3",
   "description": "The balloon editor build of CKEditor 5 – the best browser-based rich text editor.",
   "keywords": [
     "wysiwyg",
@@ -47,7 +47,8 @@
     "@ckeditor/ckeditor5-paragraph": "^35.4.0",
     "@ckeditor/ckeditor5-paste-from-office": "^35.1.0",
     "@ckeditor/ckeditor5-table": "^35.1.0",
-    "@ckeditor/ckeditor5-typing": "^35.1.0"
+    "@ckeditor/ckeditor5-typing": "^35.1.0",
+    "@ckeditor/ckeditor5-upload": "^35.1.0"
   },
   "devDependencies": {
     "@ckeditor/ckeditor5-core": "^35.1.0",
